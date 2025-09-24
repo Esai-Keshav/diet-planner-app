@@ -1,7 +1,7 @@
 import { useState } from "react";
 import dataset from "@/assets/data.json";
 import { type Goal, type Meal } from "@/types";
-import idly from "@/assets/img/idly.webp";
+// import idly from "";
 import { Button } from "@/components/ui/button";
 import {
   Select,
@@ -27,7 +27,8 @@ export default function App() {
   const randomFood = items[foodIndex];
 
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex mt-16 flex-col items-center justify-center">
+      <h1 className="text-4xl font-semibold">Diet Planner App </h1>
       <div className="space-y-4 mt-6 flex flex-col items-center">
         <Select value={goal} onValueChange={(value) => setGoal(value as Goal)}>
           <SelectTrigger className="w-[180px]">
@@ -57,14 +58,14 @@ export default function App() {
         )}
 
         <Button className="mt-4" onClick={handlePlanClick}>
-          Plan
+          Next
         </Button>
 
         {randomFood && (
           <div className="flex flex-col justify-center mx-auto text-center mt-8  border-2 rounded-2xl p-3 gap-3 w-9/10">
             <p className="font-semibold text-lg">{randomFood.food_name}</p>
             <img
-              src={randomFood.img}
+              src={`${import.meta.env.BASE_URL}${randomFood.img.slice(1)}`}
               alt={randomFood.food_name}
               className="mx-auto mt-2 rounded-lg max-w-[200px]"
             />

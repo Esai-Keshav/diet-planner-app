@@ -13,7 +13,7 @@
       },
       {
         "food_name": "Idli with Sambar",
-        "img": "src/assets/img/idly.webp",
+        "img": "/img/idly.webp",
         "description": "Steamed rice cakes that are low in fat, served with a vegetable and lentil stew."
       }
     ],
