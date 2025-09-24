@@ -1,0 +1,163 @@
+{
+  "goals": {
+    "weight_loss": {
+      "breakfast": [
+        {
+          "food_name": "Moong Dal Chilla",
+          "img": "https://example.com/images/moong_dal_chilla.jpg",
+          "description": "A savory pancake made from yellow lentils, rich in protein and low in calories."
+        },
+        {
+          "food_name": "Oats Upma",
+          "img": "https://example.com/images/oats_upma.jpg",
+          "description": "A healthy twist on the classic upma, made with fiber-rich oats and vegetables."
+        },
+        {
+          "food_name": "Idli with Sambar",
+          "img": "https://example.com/images/idli_sambar.jpg",
+          "description": "Steamed rice cakes that are low in fat, served with a vegetable and lentil stew."
+        }
+      ],
+      "lunch": [
+        {
+          "food_name": "Quinoa Pulao with Raita",
+          "img": "https://example.com/images/quinoa_pulao.jpg",
+          "description": "A high-protein, high-fiber alternative to rice pulao, served with yogurt."
+        },
+        {
+          "food_name": "Roti with Mixed Vegetable Sabzi",
+          "img": "https://example.com/images/roti_sabzi.jpg",
+          "description": "Whole wheat flatbread with a curry of seasonal vegetables, providing complex carbs and fiber."
+        },
+        {
+          "food_name": "Salad with Grilled Paneer",
+          "img": "https://example.com/images/paneer_salad.jpg",
+          "description": "A refreshing salad with greens, vegetables, and protein-rich grilled cottage cheese."
+        }
+      ],
+      "dinner": [
+        {
+          "food_name": "Vegetable Khichdi",
+          "img": "https://example.com/images/veg_khichdi.jpg",
+          "description": "A light and easy-to-digest one-pot meal of rice, lentils, and mixed vegetables."
+        },
+        {
+          "food_name": "Grilled Fish with Sautéed Vegetables",
+          "img": "https://example.com/images/grilled_fish.jpg",
+          "description": "Lean protein from grilled fish served with fiber-rich stir-fried vegetables."
+        },
+        {
+          "food_name": "Dal Soup",
+          "img": "https://example.com/images/dal_soup.jpg",
+          "description": "A simple, comforting, and nutritious soup made from lentils."
+        }
+      ]
+    },
+    "muscle_gain": {
+      "breakfast": [
+        {
+          "food_name": "Egg Bhurji with Whole Wheat Bread",
+          "img": "https://example.com/images/egg_bhurji.jpg",
+          "description": "Scrambled eggs spiced with Indian herbs, a great source of high-quality protein."
+        },
+        {
+          "food_name": "Paneer Paratha with Curd",
+          "img": "https://example.com/images/paneer_paratha.jpg",
+          "description": "Whole wheat flatbread stuffed with spiced cottage cheese, high in protein and carbs for energy."
+        },
+        {
+          "food_name": "Sattu Shake",
+          "img": "https://example.com/images/sattu_shake.jpg",
+          "description": "A traditional protein shake made from roasted gram flour, milk, and a natural sweetener."
+        }
+      ],
+      "lunch": [
+        {
+          "food_name": "Chicken Curry with Brown Rice",
+          "img": "https://example.com/images/chicken_curry_rice.jpg",
+          "description": "A classic combination of lean protein from chicken and complex carbohydrates from brown rice."
+        },
+        {
+          "food_name": "Rajma Chawal",
+          "img": "https://example.com/images/rajma_chawal.jpg",
+          "description": "Kidney bean curry served with steamed rice, offering a complete amino acid profile."
+        },
+        {
+          "food_name": "Soya Chunks Curry with Roti",
+          "img": "https://example.com/images/soya_curry.jpg",
+          "description": "A high-protein vegetarian option made from soya chunks in a flavorful gravy."
+        }
+      ],
+      "dinner": [
+        {
+          "food_name": "Tandoori Chicken/Paneer Tikka",
+          "img": "https://example.com/images/tandoori_chicken.jpg",
+          "description": "Marinated chicken or cottage cheese grilled to perfection, providing a lean protein boost."
+        },
+        {
+          "food_name": "Fish Curry with a side of vegetables",
+          "img": "https://example.com/images/fish_curry.jpg",
+          "description": "A light fish curry packed with omega-3 fatty acids and protein."
+        },
+        {
+          "food_name": "Dal Makhani with Jeera Rice",
+          "img": "https://example.com/images/dal_makhani.jpg",
+          "description": "A rich curry made with black lentils and kidney beans, providing sustained energy and protein."
+        }
+      ]
+    },
+    "diabetes": {
+      "breakfast": [
+        {
+          "food_name": "Ragi Dosa",
+          "img": "https://example.com/images/ragi_dosa.jpg",
+          "description": "A crepe made from finger millet (ragi) flour, which has a low glycemic index."
+        },
+        {
+          "food_name": "Methi Thepla",
+          "img": "https://example.com/images/methi_thepla.jpg",
+          "description": "A spiced flatbread made with whole wheat flour and fenugreek leaves, known to help manage blood sugar."
+        },
+        {
+          "food_name": "Besan Chilla",
+          "img": "https://example.com/images/besan_chilla.jpg",
+          "description": "A savory pancake made from gram flour (besan), which is high in fiber and protein."
+        }
+      ],
+      "lunch": [
+        {
+          "food_name": "Jowar Roti with Leafy Green Sabzi",
+          "img": "https://example.com/images/jowar_roti.jpg",
+          "description": "Sorghum flatbread served with a side of stir-fried spinach or other leafy greens."
+        },
+        {
+          "food_name": "Karela Sabzi with Roti",
+          "img": "https://example.com/images/karela_sabzi.jpg",
+          "description": "Bitter gourd curry, traditionally believed to have blood sugar-lowering properties."
+        },
+        {
+          "food_name": "Brown Rice with Sambar",
+          "img": "https://example.com/images/brown_rice_sambar.jpg",
+          "description": "A controlled portion of fiber-rich brown rice with a hearty vegetable and lentil stew."
+        }
+      ],
+      "dinner": [
+        {
+          "food_name": "Palak Paneer with one Multigrain Roti",
+          "img": "https://example.com/images/palak_paneer.jpg",
+          "description": "Cottage cheese cubes in a spinach gravy, offering protein and essential nutrients with minimal carbs."
+        },
+        {
+          "food_name": "Lauki Sabzi (Bottle Gourd Curry)",
+          "img": "https://example.com/images/lauki_sabzi.jpg",
+          "description": "A very light curry with a low glycemic index, easy to digest and hydrating."
+        },
+        {
+          "food_name": "Mixed Vegetable and Lentil Soup",
+          "img": "https://example.com/images/veg_lentil_soup.jpg",
+          "description": "A warm and filling soup that provides fiber and protein without spiking blood sugar levels."
+        }
+      ]
+    }
+  }
+}
