@@ -23,11 +23,11 @@ export default function App() {
   return (
     <div className="flex mt-12 flex-col items-center justify-center">
       <h1 className="text-4xl font-semibold font-jetbrains text-wrap text-center wrap-break-word">
-        Diet Planner App{" "}
+        Diet Planner
       </h1>
       <div className="space-y-4 mt-6 flex flex-col items-center ">
         <Select value={goal} onValueChange={(value) => setGoal(value as Goal)}>
-          <SelectTrigger className="w-1/2">
+          <SelectTrigger className="w-[180px]">
             <SelectValue placeholder="Diet Goals" />
           </SelectTrigger>
           <SelectContent>
@@ -42,7 +42,7 @@ export default function App() {
             value={meal}
             onValueChange={(value) => setMeal(value as Meal)}
           >
-            <SelectTrigger className="w-1/2">
+            <SelectTrigger className="w-[180px]">
               <SelectValue placeholder="Meal Time" />
             </SelectTrigger>
             <SelectContent>
@@ -54,7 +54,7 @@ export default function App() {
         )}
 
         <Button
-          className="mt-4 w-1/5"
+          className="mt-3 "
           onClick={() => {
             const items = goal && meal ? dataset[goal]?.[meal] ?? [] : [];
             setFood_items(items);
