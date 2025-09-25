@@ -1,4 +1,4 @@
-git # Diet Planner App
+# Diet Planner App
 
 ## To run:
 
