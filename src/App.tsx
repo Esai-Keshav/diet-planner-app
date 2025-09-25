@@ -1,6 +1,6 @@
 import { useState } from "react";
 import dataset from "@/assets/data.json";
-import { type Goal, type Meal } from "@/types";
+import { type Goal, type Meal, type FoodItem } from "@/types";
 // import idly from "";
 import { Button } from "@/components/ui/button";
 import {
@@ -14,24 +14,20 @@ import {
 export default function App() {
   const [goal, setGoal] = useState<Goal | "">("");
   const [meal, setMeal] = useState<Meal | "">("");
-  const [foodIndex, setFoodIndex] = useState<number>(0);
+  const [food_items, setFood_items] = useState<FoodItem[] | []>([]);
 
-  const items = goal && meal ? dataset[goal]?.[meal] ?? [] : [];
+  // const [foodIndex, setFoodIndex] = useState<number>(0);
 
-  const handlePlanClick = () => {
-    if (items.length > 0) {
-      setFoodIndex(Math.floor(Math.random() * items.length));
-    }
-  };
-
-  const randomFood = items[foodIndex];
+  // const items = goal && meal ? dataset[goal]?.[meal] ?? [] : [];
 
   return (
-    <div className="flex mt-16 flex-col items-center justify-center">
-      <h1 className="text-4xl font-semibold">Diet Planner App </h1>
-      <div className="space-y-4 mt-6 flex flex-col items-center">
+    <div className="flex mt-12 flex-col items-center justify-center">
+      <h1 className="text-4xl font-semibold font-jetbrains text-wrap text-center wrap-break-word">
+        Diet Planner App{" "}
+      </h1>
+      <div className="space-y-4 mt-6 flex flex-col items-center ">
         <Select value={goal} onValueChange={(value) => setGoal(value as Goal)}>
-          <SelectTrigger className="w-[180px]">
+          <SelectTrigger className="w-1/2">
             <SelectValue placeholder="Diet Goals" />
           </SelectTrigger>
           <SelectContent>
@@ -46,7 +42,7 @@ export default function App() {
             value={meal}
             onValueChange={(value) => setMeal(value as Meal)}
           >
-            <SelectTrigger className="w-[180px]">
+            <SelectTrigger className="w-1/2">
               <SelectValue placeholder="Meal Time" />
             </SelectTrigger>
             <SelectContent>
@@ -57,19 +53,38 @@ export default function App() {
           </Select>
         )}
 
-        <Button className="mt-4" onClick={handlePlanClick}>
-          Next
+        <Button
+          className="mt-4 w-1/5"
+          onClick={() => {
+            const items = goal && meal ? dataset[goal]?.[meal] ?? [] : [];
+            setFood_items(items);
+          }}
+        >
+          Plan
         </Button>
 
-        {randomFood && (
-          <div className="flex flex-col justify-center mx-auto text-center mt-8  border-2 rounded-2xl p-3 gap-3 w-9/10">
-            <p className="font-semibold text-lg">{randomFood.food_name}</p>
-            <img
-              src={`${import.meta.env.BASE_URL}${randomFood.img.slice(1)}`}
-              alt={randomFood.food_name}
-              className="mx-auto mt-2 rounded-lg max-w-[200px]"
-            />
-            <p className="mt-1 w-9/10 mx-auto">{randomFood.description}</p>
+        {food_items && (
+          <div className="flex flex-col justify-center mx-auto text-center mt-8 gap-6">
+            {food_items.map((food, index) => (
+              <div
+                key={index}
+                className="border-2 rounded-2xl p-3 gap-3 w-9/10 mx-auto "
+              >
+                <p className="font-semibold text-lg font-jetbrains">
+                  {food.food_name}
+                </p>
+                <img
+                  src={
+                    import.meta.env.PROD
+                      ? `${import.meta.env.BASE_URL}${food.img.slice(1)}`
+                      : food.img
+                  }
+                  alt={food.food_name}
+                  className="mx-auto mt-2 rounded-lg w-8/10"
+                />
+                <p className="mt-2 w-9/10 mx-auto">{food.description}</p>
+              </div>
+            ))}
           </div>
         )}
       </div>
