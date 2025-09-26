@@ -8,7 +8,7 @@
       },
       {
         "food_name": "Oats Upma",
-        "img": "https://example.com/images/oats_upma.jpg",
+        "img": "/img/oats_upma.webp",
         "description": "A healthy twist on the classic upma, made with fiber-rich oats and vegetables."
       },
       {
