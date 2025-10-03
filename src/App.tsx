@@ -82,7 +82,9 @@ export default function App() {
                   alt={food.food_name}
                   className="mx-auto mt-2 rounded-lg w-8/10"
                 />
-                <p className="mt-2 w-9/10 mx-auto ">{food.description}</p>
+                <p className="mt-2 w-9/10 mx-auto font-semibold ">
+                  {food.description}
+                </p>
               </div>
             ))}
           </div>

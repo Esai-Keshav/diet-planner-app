@@ -17,17 +17,17 @@ export default defineConfig({
       theme_color: "#ffffff",
       background_color: "#ffffff",
       icons: [
-        {
-          "src": "/diet-planner-app/icons/icon-192.png",
-          "sizes": "192x192",
-          "type": "image/png",
-          // "purpose": "any"
-        },
+        // {
+        //   "src": "/diet-planner-app/icons/icon-192.png",
+        //   "sizes": "192x192",
+        //   "type": "image/png",
+        //   // "purpose": "any"
+        // },
         {
           "src": "/diet-planner-app/icons/icon-512.png",
           "sizes": "512x512",
           "type": "image/png",
-          // "purpose": "any maskable "
+          "purpose": "any maskable "
         }
       ],
     },
