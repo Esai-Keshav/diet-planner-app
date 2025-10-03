@@ -64,7 +64,7 @@ export default function App() {
         </Button>
 
         {food_items && (
-          <div className="flex flex-col justify-center mx-auto text-center mt-8 gap-6">
+          <div className="flex flex-col justify-center mx-auto text-center my-8 gap-6 ">
             {food_items.map((food, index) => (
               <div
                 key={index}
@@ -82,7 +82,7 @@ export default function App() {
                   alt={food.food_name}
                   className="mx-auto mt-2 rounded-lg w-8/10"
                 />
-                <p className="mt-2 w-9/10 mx-auto">{food.description}</p>
+                <p className="mt-2 w-9/10 mx-auto ">{food.description}</p>
               </div>
             ))}
           </div>
