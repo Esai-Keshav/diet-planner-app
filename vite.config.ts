@@ -20,14 +20,14 @@ export default defineConfig({
         {
           "src": "/diet-planner-app/icons/icon-192.png",
           "sizes": "192x192",
-          "type": "image",
-          "purpose": "any"
+          "type": "image/png",
+          // "purpose": "any"
         },
         {
           "src": "/diet-planner-app/icons/icon-512.png",
           "sizes": "512x512",
           "type": "image/png",
-          "purpose": "any maskable "
+          // "purpose": "any maskable "
         }
       ],
     },
