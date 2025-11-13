@@ -66,28 +66,30 @@ export default function App() {
         {food_items && (
           <div className="flex flex-col justify-center mx-auto text-center my-8 gap-6 ">
             {food_items.map((food, index) => (
-              <div
-                key={index}
-                className="border-2 rounded-2xl p-3 gap-3 w-9/10 mx-auto "
-              >
-                <p className="font-semibold text-lg font-jetbrains">
-                  {food.food_name}
-                </p>
-                <img
-                  src={
-                    import.meta.env.PROD
-                      ? `${import.meta.env.BASE_URL}${food.img.slice(1)}`
-                      : food.img
-                  }
-                  alt={food.food_name}
-                  className="mx-auto mt-2 rounded-lg w-8/10"
-                />
-                <p className="mt-2 w-9/10 mx-auto    ">{food.description}</p>
-                {/* <div className="flex gap-2 justify-center my-3">
+              <a href={food.youtube} target="_blank" rel="noopener noreferrer">
+                <div
+                  key={index}
+                  className="border-2 rounded-2xl p-3 gap-3 w-9/10 mx-auto "
+                >
+                  <p className="font-semibold text-lg font-jetbrains">
+                    {food.food_name}
+                  </p>
+                  <img
+                    src={
+                      import.meta.env.PROD
+                        ? `${import.meta.env.BASE_URL}${food.img.slice(1)}`
+                        : food.img
+                    }
+                    alt={food.food_name}
+                    className="mx-auto mt-2 rounded-lg w-8/10"
+                  />
+                  <p className="mt-2 w-9/10 mx-auto    ">{food.description}</p>
+                  {/* <div className="flex gap-2 justify-center my-3">
                   <Button variant="secondary">Receipe</Button>
                   <Button variant="destructive">Youtube</Button>
-                </div> */}
-              </div>
+                  </div> */}
+                </div>
+              </a>
             ))}
           </div>
         )}

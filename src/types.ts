@@ -2,6 +2,7 @@ export type FoodItem = {
     food_name: string
     img: string
     description: string
+    youtube?: string
 }
 
 export type Meal = "breakfast" | "lunch" | "dinner"
