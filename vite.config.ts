@@ -44,5 +44,5 @@ export default defineConfig({
     port: 5173,
   },
 
-  // base: "/diet-planner-app/",
+  base: "/diet-planner-app/",
 })
