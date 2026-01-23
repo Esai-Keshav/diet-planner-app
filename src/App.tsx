@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import dataset from "@/assets/data.json";
 import { type Goal, type Meal, type FoodItem } from "@/types";
 import Hotels from "./Hotel";

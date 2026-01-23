@@ -21,7 +21,7 @@ export default function Hotels() {
         const data: PaginatedResponse<Hotel> = await res.json();
         setHotels(data.results);
       } catch (err) {
-        setError("Failed to load hotels");
+        setError(`Failed to load hotels ${err}`);
       } finally {
         setLoading(false);
       }
