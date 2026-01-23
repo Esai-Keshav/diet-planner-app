@@ -15,3 +15,19 @@ export type Meals = {
 export type Dataset = {
     [key in Goal]?: Meals
 }
+
+
+// types/hotel.ts
+export interface Hotel {
+    id: number;
+    name: string;
+    location: string;
+    price: number;
+}
+
+export interface PaginatedResponse<T> {
+    count: number;
+    next: string | null;
+    previous: string | null;
+    results: T[];
+}
