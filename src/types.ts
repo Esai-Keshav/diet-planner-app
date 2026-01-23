@@ -21,8 +21,8 @@ export type Dataset = {
 export interface Hotel {
     id: number;
     name: string;
-    location: string;
-    price: number;
+    city: string;
+    image_url: string;
 }
 
 export interface PaginatedResponse<T> {
