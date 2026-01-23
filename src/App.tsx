@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import dataset from "@/assets/data.json";
 import { type Goal, type Meal, type FoodItem } from "@/types";
+import Hotels from "./Hotel";
 // import idly from "";
 import { Button } from "@/components/ui/button";
 import {
@@ -36,7 +37,6 @@ export default function App() {
             <SelectItem value="diabetes">Diabetes Diet</SelectItem>
           </SelectContent>
         </Select>
-
         {goal && (
           <Select
             value={meal}
@@ -52,7 +52,6 @@ export default function App() {
             </SelectContent>
           </Select>
         )}
-
         <Button
           className="mt-3 "
           onClick={() => {
@@ -62,7 +61,6 @@ export default function App() {
         >
           Plan
         </Button>
-
         {food_items && (
           <div className="flex flex-col justify-center mx-auto text-center my-8 gap-6 ">
             {food_items.map((food, index) => (
@@ -93,6 +91,9 @@ export default function App() {
             ))}
           </div>
         )}
+        <div></div>
+        <Hotels />
+        here
       </div>
     </div>
   );
